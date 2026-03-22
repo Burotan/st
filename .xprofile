@@ -1,0 +1,3 @@
+if [ "$DESKTOP_SESSION" = "dwm" ]; then
+  feh --bg-scale ~/Wallpapers/wallpaper5.jpg &
+fi
