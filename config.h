@@ -96,27 +96,33 @@ unsigned int tabspaces = 8;
 float alpha = 0.9;
 
 static const char *colorname[] = {
-	"#0a0a0a",
-	"#800000",
-	"#2d332d",
-	"#4d4d4d",
-	"#1a2533",
-	"#3b0a0a",
-	"#2f4f4f",
-	"#b0b0b0",
-	"#404040",
-	"#ff0000",
-	"#4a5e4a",
-	"#eeeeee",
-	"#304050",
-	"#a10000",
-	"#708090",
-	"#ffffff",
-	[255] = 0,
-	"#ffffff",
-	"#000000",
-	"#e0e0e0",
-	"#000000",
+    /* 8 normal colors */
+    "#000000", /* 0: black   */
+    "#8c0000", /* 1: red     */
+    "#4a4a4a", /* 2: green   */
+    "#303030", /* 3: yellow  */
+    "#808080", /* 4: blue    */
+    "#9c9c9c", /* 5: magenta */
+    "#666666", /* 6: cyan    */
+    "#c1c1c1", /* 7: white   */
+
+    /* 8 bright colors */
+    "#333333", /* 8: brblack  */
+    "#d23232", /* 9: brred    */
+    "#4a4a4a", /* 10: brgreen */
+    "#303030", /* 11: bryellow */
+    "#808080", /* 12: brblue   */
+    "#9c9c9c", /* 13: brmagenta*/
+    "#666666", /* 14: brcyan   */
+    "#c1c1c1", /* 15: brwhite  */
+
+    [255] = 0,
+
+    /* Special colors based on Gorgoroth */
+    "#c1c1c1", /* 256: foreground */
+    "#000000", /* 257: background */
+    "#c1c1c1", /* 258: cursor     */
+    "#000000", /* 259: reverse cursor */
 };
 
 /*
